@@ -34,7 +34,7 @@ export class AppController {
 
   @Post('/newCoupon')
   @Render('newCoupon')
-  async addNewMusic(@Body() newCoupon: newCouponDTO, @Res() res: Response) {
+  async addNewCoupon(@Body() newCoupon: newCouponDTO, @Res() res: Response) {
       const title = newCoupon.title;
       const percentage = newCoupon.percentage;
       const code = newCoupon.code;
